@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"],textarea{
+ width:250px;
+ height : 23px;
+}
+td{
+    width:10%;
+ }
+input[type="submit"],textarea{
+ 
+    background-color: black;
+    color: white;
+}
+
+#ermail{
+    color: red;
+    padding: 5px;
+ }
+ input.fail{
+    border: 2px solid red;
+}
+input.success{
+    border: solid 2px rgb(22, 206, 22);
+}
+.ernam,.ermail,.errad,.erph,.erdate,.ertime,.ermsg{padding: 5px;color: red; height: 30px;}
+
+#fn{
+    color: red;
+    padding: 5px;
+}
+#ln{
+   color: red;
+    padding: 5px;
+}
+#errad{
+    color: red;
+    padding: 5px;
+ }

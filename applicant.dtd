@@ -1,0 +1,28 @@
+<!ELEMENT Application (Applicant,ApplyingTo,Recommender,Recommenderinfo,Applicantinfo,Wouldyouadmit,FullName)>
+<!ELEMENT Applicant (#PCDATA)>
+<!ELEMENT ApplyingTo (#PCDATA)>
+<!ELEMENT Recommender (#PCDATA)>
+<!ELEMENT Recommenderinfo (prefix,FirstName,LastName,Organization,Title,Relationship,Telephone,Email)>
+<!ELEMENT prefix (#PCDATA)>
+<!ATTLIST prefix type (Dr|Mr) "Dr">
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Organization (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ATTLIST Title name (Professor|AssociateProfessor|HOD|DEAN) "AssociateProfessor">
+<!ELEMENT Relationship (#PCDATA)>
+<!ATTLIST Relationship name (Professor|AssociateProfessor|HOD|DEAN) "Professor">
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Applicantinfo (AcademicPerformance,IntellectualAbility,AbilitytoExpress,MotivationforStudy)>
+<!ELEMENT AcademicPerformance (#PCDATA)>
+<!ATTLIST AcademicPerformance value (Upper-1-to-2-percent|Upper-10-percent|Upper-25-percent|Upper-50-percent|Lower-half|No-basis-for-judgement) "Upper-1-to-2-percent">
+<!ELEMENT IntellectualAbility (#PCDATA)>
+<!ATTLIST IntellectualAbility value (Upper-1-to-2-percent|Upper-10-percent|Upper-25-percent|Upper-50-percent|Lower-half|No-basis-for-judgement) "Upper-10-percent">
+<!ELEMENT AbilitytoExpress (#PCDATA)>
+<!ATTLIST AbilitytoExpress value (Upper-1-to-2-percent|Upper-10-percent|Upper-25-percent|Upper-50-percent|Lower-half|No-basis-for-judgement) "Upper-25-percent">
+<!ELEMENT MotivationforStudy (#PCDATA)>
+<!ATTLIST MotivationforStudy value (Upper-1-to-2-percent|Upper-10-percent|Upper-25-percent|Upper-50-percent|Lower-half|No-basis-for-judgement) "Upper-50-percent">
+<!ELEMENT Wouldyouadmit (#PCDATA)>
+<!ATTLIST Wouldyouadmit ans (Assuredly|Probably|Possibly|No) "Probably">
+<!ELEMENT FullName (#PCDATA)>

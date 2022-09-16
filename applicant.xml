@@ -1,0 +1,24 @@
+<!DOCTYPE Application SYSTEM "./applicant.dtd">
+<Application>
+    <Applicant>S. Pranav Adith</Applicant>
+    <ApplyingTo>Stony Brook university office of Graduate and Health Sciences Adminssions</ApplyingTo>
+    <Recommender>SenthilKumar T</Recommender>
+    <Recommenderinfo>
+        <prefix type = "Dr"></prefix>
+        <FirstName>Senthilkumar</FirstName>
+        <LastName>T</LastName>
+        <Organization>Amrita Vishwa Vidyapeetham</Organization>
+        <Title name = "AssociateProfessor" />
+        <Relationship name =  "Professor" />
+        <Telephone>9876543210</Telephone>
+        <Email>senthilkumar_t@gmail.com</Email>
+    </Recommenderinfo>
+    <Applicantinfo>
+        <AcademicPerformance value = "Upper-1-to-2-percent"/>
+        <IntellectualAbility value = "Upper-10-percent"/>
+        <AbilitytoExpress value = "Upper-25-percent"/>
+        <MotivationforStudy value = "Upper-50-percent"/>
+    </Applicantinfo>
+    <Wouldyouadmit ans="Probably"/>
+    <FullName>SenthilKumar T</FullName>
+</Application>

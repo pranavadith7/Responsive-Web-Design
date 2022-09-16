@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation_1</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <form name="form1" action="index.html" onsubmit="checkfn()">
+        <h1>Recommendation</h1>
+        <div style="background-color: lightgrey; line-height: 1.8;">
+         <b>Applicant :</b> S. Pranav Adith<br/>
+         <b>Applying to :</b> Stony Brook University Office of Graduate and Health Sciences Admissions.<br/>
+         <b>Recommender :</b> Senthilkumar T<br/>
+        </div>
+        <h3 style="color:darkred; font-family: 'Times New Roman', Times, serif;">Applicant Information</h3>
+        <b>Applicant Name : S. Pranav Adith</b><br/>
+        <div>
+            <p>Do your wish to waive your right to examine this letter of recommendation?</p>
+            <form>
+                <input type="radio" id="radio1" name="rb" value="yes">
+                <label for="yes"> I waive my right to access this report.</label><br>
+                <input type="radio" id="radio2" name="rb" value="no">
+                <label for="no"> I do not waive my right to access this report.</label>
+            </form>
+        </div>
+        <p>Signed by: S. Pranav Adith</p>
+        <b>Recommender Information</b>
+        <br/>
+        <br/>
+        Prefix:
+        <br/>
+        <select name="" id="expertise">
+            <option value="Dr.">Dr.</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Ms.">Ms.</option>
+          </select>
+          <br/><br/>
+        First Name :
+        <br/>
+        <input type="text" id="name1" oninput="checkfn()" placeholder="Enter your first name">
+        <div id="fn">
+        </div>
+        <br/>
+  
+        Last Name :
+        <br/>
+        <input type="text" id="name2" oninput="checkln()" placeholder="Enter your last name">
+        <div id="ln">
+        </div>
+        <br/>
+
+        Organization :
+        <br/>
+        <input type="text" placeholder="Enter your organization">
+        <br/>
+        <br/>
+        Title :
+        <br/>
+        <input type="text" placeholder="Enter the title">
+        <br/>
+        <br/>
+        Relationship to student : 
+        <br/>
+        <input type="text" placeholder="Relationship to student">
+        <br/>
+        <br/>
+        Telephone :
+        <br/>
+        <input type="tel" id="phone" oninput="checkphone()" placeholder="Telephone number">
+        <br/>
+        <br/>
+        Email :
+        <br/>
+        <input type="text" id="mail" oninput="checkmail()" placeholder="Enter your Email Address">
+        <div id="remail">
+        </div>
+        <br/>
+        <b>Applicant Information : </b>
+        <br/>
+        <br/>
+        <table >
+            <thead>
+              <tr>
+                <td></td>
+                <td>Upper 1 to 2%</td>
+                <td>Upper 10%</td>
+                <td>Upper 25%</td>
+                <td>Upper 50%</td>
+                <td>Lower Half</td>
+                <td>No Basis for Judgement</td>
+              </tr>
+            </thead>
+            <tbody style="line-height:1.5 ;">
+              <tr>
+                <td>Academic Performance</td>
+                <td><input type="radio"  name="ap1" id="ap1"/></td>
+                <td><input type="radio"  name="ap1" id="ap2"/></td>
+                <td><input type="radio"  name="ap1" id="ap3"/></td>
+                <td><input type="radio"  name="ap1" id="ap4"/></td>
+                <td><input type="radio"  name="ap1" id="ap5"/></td>
+                <td><input type="radio"  name="ap1" id="ap6"/></td>
+              </tr>
+                  <tr>
+                <td>Intellectual Ability</td>
+                <td><input type="radio"  name="ia1" id="ia1"/></td>
+                <td><input type="radio" name="ia1" id="ia2"/></td>
+                <td><input type="radio" name="ia1" id="ia3"/></td>
+                <td><input type="radio" name="ia1" id="ia4"/></td>
+                <td><input type="radio" name="ia1" id="ia5"/></td>
+                <td><input type="radio" name="ia1" id="ia6"/></td>
+              </tr>
+                  <tr>
+                <td>Ability to Express Him/Herself</td>
+                <td><input type="radio" name="atoe1" id="atoe1"/></td>
+                <td><input type="radio" name="atoe1" id="atoe2"/></td>
+                <td><input type="radio" name="atoe1" id="atoe3"/></td>
+                <td><input type="radio" name="atoe1" id="atoe4"/></td>
+                <td><input type="radio" name="atoe1" id="atoe5"/></td>
+                <td><input type="radio" name="atoe1" id="atoe6"/></td>
+            </tr>
+            <tr>
+                <td>Motivation for Proposed Field of Study</td>
+                <td><input type="radio" name="mfpfos1" id="mfpfos1"/></td>
+                <td><input type="radio" name="mfpfos1" id="mfpfos2"/></td>
+                <td><input type="radio" name="mfpfos1" id="mfpfos3"/></td>
+                <td><input type="radio" name="mfpfos1" id="mfpfos4"/></td>
+                <td><input type="radio" name="mfpfos1" id="mfpfos5"/></td>
+                <td><input type="radio" name="mfpfos1" id="mfpfos6"/></td>
+            </tr>
+          </tbody>
+        </table>
+        <br/>
+        Would you admit the applicant in your department?<br/><br/>
+        <input type="radio"  name="r1" id="r1">
+        <label>Assuredly</label><br/>
+        <input type="radio" name="r1" id="r2">
+        <label>Probably</label><br/>
+        <input type="radio" name="r1" id="r3">
+        <label>Possibly</label><br/>
+        <input type="radio" name="r1" id="r4">
+        <label>No</label>
+        <br/>
+        <h3 style="color:darkred; font-family: 'Times New Roman', Times, serif;">Submission</h3>
+        <p style="line-height: 1.5;">Access to recommendations is restricted to admitted students, and only after enrollment in this application's academic program.
+        In place of your signature, please type your full legal name: <input type="text"></p>
+        <input type="submit" value="Submit"> &nbsp;  <input type="submit" value="Save for Later"> &nbsp; <input type="submit" value="Display" onclick="display()">
+    </form>
+</body>
+</html> 

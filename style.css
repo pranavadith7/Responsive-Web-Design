@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(188, 180, 180);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.header{
+    background-color: transparent;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header1{
+    background-color: transparent;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.subhead{
+    background-color: rgb(189, 189, 60);
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    border: 0.5rem solid rgb(0, 183, 255);
+    border-radius: 1rem;
+}
+
+.row {
+    display: flex;
+    padding-top: 2rem;
+    align-content: space-between;
+}
+
+.col1 {
+    flex: 15%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(60, 189, 88);
+    color: black;
+    border: 0.5rem solid rgb(0, 183, 255);
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.col2 {
+    flex: 70%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(233, 108, 24);
+    color: black;
+    border: 0.5rem solid rgb(0, 183, 255);
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.col3 {
+    flex: 15%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(60, 189, 88);
+    color: black;
+    border: 0.5rem solid rgb(0, 183, 255);
+    border-radius: 1rem;
+}
+
+.subhead1{
+    background-color: gray;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    border: 0.5rem solid rgb(0, 183, 255);
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.b1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    background-color: gray;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col1{
+        display: none;
+    }
+    .col2{
+        flex: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .col3{
+        flex: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .header1{
+        display: block;
+    }
+    .header{
+        display: none;
+    }
+}
